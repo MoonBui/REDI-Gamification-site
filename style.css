@@ -1,4 +1,4 @@
-#first {
+/* #first {
     background-color: aquamarine;
 }
 
@@ -16,7 +16,7 @@ div p {
     font-size: large;
     margin: 1em;
     padding: 3em;
-}
+} */
 
 i {
     font-size: 200%;
@@ -29,7 +29,8 @@ button {
     border: none;
 }
 
-h1,
+
+/* h1,
 #result {
     display: inline-flex;
-}
+} */
