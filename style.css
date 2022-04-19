@@ -18,9 +18,48 @@ div p {
     padding: 3em;
 } */
 
-i {
+#game-prompt {
+    color: #c4161c;
+    font-size: small;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.bi-award {
     font-size: 200%;
     padding: 1em;
+    display: inline-flex;
+}
+
+.bi-award:hover {
+    color: #c4161c;
+}
+
+.find-icon {
+    transition-property: all;
+    transition-duration: .3s;
+}
+
+#myModal .modal-body p {
+    text-align: left;
+    /* color: white; */
+}
+
+#myModal .modal-body textarea {
+    width: 100%;
+}
+
+#myModal .modal-header {
+    border-bottom: none;
+    /* color: white; */
+}
+
+
+/* #myModal .modal-body {
+    color: #c4161c;
+} */
+
+#myModal {
     display: flex;
 }
 

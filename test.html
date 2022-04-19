@@ -197,6 +197,8 @@
     <script>
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <style>
         .no-js img.lazyload {
             display: none;
@@ -444,7 +446,7 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                                 </span>
                             </p>
                         </div>
-                        <h1>Consumer Behaviour</h1>
+                        <h1>Consumer Behavior</h1>
                         <p></p>
                     </div>
                 </div>
@@ -472,7 +474,16 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                         </svg> Contact REDI Cincinnati</div>
                         </a>
                     </div>
-                    <div class="bottom-bar">
+                    <div class="bottom-bar" style="padding: auto;">
+                        <br>
+                        <p id="game-prompt" style="margin: auto;">To help you get a basic understanding of how gamification can impact consumer behaviors, let’s play a small game! Locate the icons shown below in the website. Click on any icons you find, a secret prize awaits you if you find all
+                            icons!
+                        </p>
+                        <div style="position: relative; text-align: center;">
+                            <i id="test" class="icon bi bi-award"></i>
+                            <i id="test" class="icon bi bi-award"></i>
+                            <i id="test" class="icon bi bi-award"></i>
+                        </div>
                         <div class="hash"></div>
                     </div>
                 </div>
@@ -531,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
 
                         </div>
                     </a>
-                    <button onclick="toggleIcon(0)"> <i id="test" class="icon bi bi-award"></i></button>
+                    <button onclick="toggleIcon(0)"> <i id="test" class="icon bi bi-award find-icon"></i></button>
                     <a class="two-column-card card-link full" href="/industries/technology/supply-chain-technology/" target="_blank">
                         <div class="card-item">
                             <div class="card-image" style="background-image:url('./Archive/Consumer\ Research\ REDI.jpeg');"></div>
@@ -569,7 +580,7 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
         <section class="section section_id2 section-image_with_floating_content bg-white text-black padding-medium ">
 
             <div class="container">
-                <h2 class="title" style="text-align: center;">Why choose Cincinnati for Consumer Behavior</h2>
+                <h2 class="title" style="text-align: center;">Why choose Cincinnati for Consumer Behavior?</h2>
                 <div class="image-content content-left">
                     <div class="image" style="background-image:url('cincinnati.jpeg'); background-size:cover;" data-aos="fade-left" data-aos-duration="1000">
                     </div>
@@ -686,79 +697,118 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
 
 
         <section class="section section_id5 section-logo_quilt bg-white text-black padding-medium ">
-            <button onclick="toggleIcon(1)"> <i id="test" class="icon bi bi-award"></i></button>
-            <h2 class="text-center" style="background-color: #c4161c; color: white; padding: 2em; text-align: center;">Notable Consumer Behavior Companies in the Cincinnati Region</h2>
+            <button onclick="toggleIcon(1)"> <i id="test" class="icon bi bi-award find-icon"></i></button>
+            <h2 class="text-center" style="background-color: #c4161c; color: white; padding: 2em; text-align: center;">Consumer Behavior Companies in the Cincinnati Region</h2>
 
             <div class="container">
                 <div class="logo-quilt d-flex flex-wrap align-items-center grayscale justify-content-left">
+                    <a class='logo-item'>
+                        <img alt="8451.png (opens in a new tab)" data-src="./Color Logos/8451.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/8451.png" alt="8451.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Ample.png (opens in a new tab)" data-src="./Color Logos/Ample.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Ample.png" alt="Ample.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Astronomer.png (opens in a new tab)" data-src="./Color Logos/Astronomer.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Astronomer.png" alt="Astronomer.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Burke inc.png (opens in a new tab)" data-src="./Color Logos/Burke inc.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Burke inc.png" alt="Burke inc.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Centrogram copy.png (opens in a new tab)" data-src="./Color Logos/Centrogram copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Centrogram copy.png" alt="Centrogram copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Cincinnati Bell.png (opens in a new tab)" data-src="./Color Logos/Cincinnati Bell.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Cincinnati Bell.png" alt="Cincinnati Bell.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Claritas copy.png (opens in a new tab)" data-src="./Color Logos/Claritas copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Claritas copy.png" alt="Claritas copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Concentrix.png (opens in a new tab)" data-src="./Color Logos/Concentrix.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Concentrix.png" alt="Concentrix.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Data Design Systems.png (opens in a new tab)" data-src="./Color Logos/Data Design Systems.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Data Design Systems.png" alt="Data Design Systems.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Directions Research. INC copy.png (opens in a new tab)" data-src="./Color Logos/Directions Research. INC copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Directions Research. INC copy.png" alt="Directions Research. INC copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Dunnhumby.png (opens in a new tab)" data-src="./Color Logos/Dunnhumby.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Dunnhumby.png" alt="Dunnhumby.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="EMI Research Solutions  copy.png (opens in a new tab)" data-src="./Color Logos/EMI Research Solutions  copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/EMI Research Solutions  copy.png" alt="EMI Research Solutions  copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Enosix.png (opens in a new tab)" data-src="./Color Logos/Enosix.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Enosix.png" alt="Enosix.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Envio Design.png (opens in a new tab)" data-src="./Color Logos/Envio Design.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Envio Design.png" alt="Envio Design.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Fifth Third.png (opens in a new tab)" data-src="./Color Logos/Fifth Third.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Fifth Third.png" alt="Fifth Third.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Gameday.png (opens in a new tab)" data-src="./Color Logos/Gameday.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Gameday.png" alt="Gameday.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="GE.png (opens in a new tab)" data-src="./Color Logos/GE.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/GE.png" alt="GE.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="IRI copy.png (opens in a new tab)" data-src="./Color Logos/IRI copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/IRI copy.png" alt="IRI copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Launch Scout.png (opens in a new tab)" data-src="./Color Logos/Launch Scout.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Launch Scout.png" alt="Launch Scout.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Leap Agency.png (opens in a new tab)" data-src="./Color Logos/Leap Agency.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Leap Agency.png" alt="Leap Agency.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Losant.png (opens in a new tab)" data-src="./Color Logos/Losant.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Losant.png" alt="Losant.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Miami University.png (opens in a new tab)" data-src="./Color Logos/Miami University.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Miami University.png" alt="Miami University.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Navistone.png (opens in a new tab)" data-src="./Color Logos/Navistone.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Navistone.png" alt="Navistone.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="ORC International.png (opens in a new tab)" data-src="./Color Logos/ORC International.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/ORC International.png" alt="ORC International.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Paycor.png (opens in a new tab)" data-src="./Color Logos/Paycor.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Paycor.png" alt="Paycor.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Possible.png (opens in a new tab)" data-src="./Color Logos/Possible.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Possible.png" alt="Possible.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="PWC.png (opens in a new tab)" data-src="./Color Logos/PWC.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/PWC.png" alt="PWC.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="P_G.png (opens in a new tab)" data-src="./Color Logos/P_G.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/P_G.png" alt="P_G.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Quotient.png (opens in a new tab)" data-src="./Color Logos/Quotient.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Quotient.png" alt="Quotient.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="RDI Sightline copy.png (opens in a new tab)" data-src="./Color Logos/RDI Sightline copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/RDI Sightline copy.png" alt="RDI Sightline copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Sigma Research.png (opens in a new tab)" data-src="./Color Logos/Sigma Research.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Sigma Research.png" alt="Sigma Research.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Sprout Insight.png (opens in a new tab)" data-src="./Color Logos/Sprout Insight.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Sprout Insight.png" alt="Sprout Insight.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Tata Consultancy copy.png (opens in a new tab)" data-src="./Color Logos/Tata Consultancy copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Tata Consultancy copy.png" alt="Tata Consultancy copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="Teradata copy.png (opens in a new tab)" data-src="./Color Logos/Teradata copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/Teradata copy.png" alt="Teradata copy.png (opens in a new tab)"></noscript>
+                    </a>
+                    <a class='logo-item'>
+                        <img alt="University of Cincinnati copy.png (opens in a new tab)" data-src="./Color Logos/University of Cincinnati copy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="./Color Logos/University of Cincinnati copy.png" alt="University of Cincinnati copy.png (opens in a new tab)"></noscript>
+                    </a>
 
-                    <a href="https://www.8451.com/" class="logo-item" target="_blank">
-                        <img alt="8451 Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/8451.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/8451.png" alt="8451 Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.accenture.com/us-en" class="logo-item" target="_blank">
-                        <img alt="Accenture Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Accenture.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Accenture.png" alt="Accenture Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://ascendum.com/" class="logo-item" target="_blank">
-                        <img alt="Ascendum Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Ascendum.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Ascendum.png" alt="Ascendum Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://atos.net/en/" class="logo-item" target="_blank">
-                        <img alt="Atos Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Atos.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Atos.png" alt="Atos Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.cbts.com/" class="logo-item" target="_blank">
-                        <img alt="CBTS Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/06/cbts_logo_rgb_-01.jpg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/06/cbts_logo_rgb_-01.jpg" alt="CBTS Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.concentrix.com/" class="logo-item" target="_blank">
-                        <img alt="Concentrix Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Conc.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Conc.png" alt="Concentrix Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.ebth.com/" class="logo-item" target="_blank">
-                        <img alt="Everything but the house Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/06/Everything-but-the-house.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/06/Everything-but-the-house.png" alt="Everything but the house Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.fisglobal.com/" class="logo-item" target="_blank">
-                        <img alt="FIS Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/FIS.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/FIS.png" alt="FIS Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://halohealth.com/" class="logo-item" target="_blank">
-                        <img alt="Halo Health Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/06/halo-health.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/06/halo-health.png" alt="Halo Health Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.infintechllc.com/" class="logo-item" target="_blank">
-                        <img alt="Infintech Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Infintech.jpg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Infintech.jpg" alt="Infintech Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://infotrust.com/" class="logo-item" target="_blank">
-                        <img alt="InfoTrust Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/InfoTrust.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/InfoTrust.png" alt="InfoTrust Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.lcs.com/" class="logo-item" target="_blank">
-                        <img alt="LCS Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/LCS.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/LCS.png" alt="LCS Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.nexigen.com/" class="logo-item" target="_blank">
-                        <img alt="Nexigen Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Nexigen.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Nexigen.png" alt="Nexigen Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.paycor.com/" class="logo-item" target="_blank">
-                        <img alt="Paycor Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Paycor.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Paycor.png" alt="Paycor Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.pomeroy.com/" class="logo-item" target="_blank">
-                        <img alt="Pomeroy Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/06/pomeroy.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/06/pomeroy.png" alt="Pomeroy Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.quotient.com/" class="logo-item" target="_blank">
-                        <img alt="Quotient Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Quotient.jpg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Quotient.jpg" alt="Quotient Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.resolvit.com/" class="logo-item" target="_blank">
-                        <img alt="Resolvit Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Resolvit.jpg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Resolvit.jpg" alt="Resolvit Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.roundtower.com/" class="logo-item" target="_blank">
-                        <img alt="Round Tower Technologies Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/Round-Tower-Technologies.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/Round-Tower-Technologies.png" alt="Round Tower Technologies Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://new.siemens.com/global/en.html" class="logo-item" target="_blank">
-                        <img alt="Siemens Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/SIEMENS.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/SIEMENS.png" alt="Siemens Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.sogeti.com/" class="logo-item" target="_blank">
-                        <img alt="Sogeti Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/06/Sogeti-1.png" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/06/Sogeti-1.png" alt="Sogeti Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="https://www.tcs.com/tata-consultancy-services-inaugurates-north-america-delivery-center-in-cincinnati-ohio" class="logo-item" target="_blank">
-                        <img alt="Tata (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2021/12/TATA_CONSULTANCY_SERVICES_Logo.jpg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2021/12/TATA_CONSULTANCY_SERVICES_Logo.jpg" alt="Tata (opens in a new tab)"></noscript>
-                    </a>
-                    <a href="http://www.voraventures.com/" class="logo-item" target="_blank">
-                        <img alt="VORA Logo (opens in a new tab)" data-src="https://redicincinnati.com/wp-content/uploads/2020/04/VORA.jpg" class="logo lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img class="logo" src="https://redicincinnati.com/wp-content/uploads/2020/04/VORA.jpg" alt="VORA Logo (opens in a new tab)"></noscript>
-                    </a>
-                    <button onclick="toggleIcon(2)"> <i id="test" class="icon bi bi-award"></i></button>
+                    <button onclick="toggleIcon(2)"> <i id="test" class="icon bi bi-award find-icon"></i></button>
                 </div>
             </div>
 
@@ -873,7 +923,7 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                     <div class="card testimonial-card">
                         <div class="d-flex flex-column flex-md-row">
                             <div class="image">
-                                <div class="thumbnail" style="background-image:url('https://redicincinnati.com/wp-content/uploads/2020/04/Guy-Peri.jpg');"></div>
+                                <div class="thumbnail" style="background-image:url('https://media-exp1.licdn.com/dms/image/C4E03AQFpbAtR9C_ykA/profile-displayphoto-shrink_800_800/0/1560716565011?e=1655942400&v=beta&t=K5O536txSJrg9aq881sJRpwGgLbuL3G_GIw6vEC9iq0');"></div>
                             </div>
                             <div class="quote-content">
                                 <p>"Cincinnati has long been home to businesses focused on consumer understanding through quantitative and qualitative research. Many local companies like Burke support organizations and brands in their quest to innovate and
@@ -881,8 +931,9 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                                     <Our class="highlight">Our status as a hub for market research and data analytics is a testament to the excellent educational programs that exist locally and the employment opportunities available in the Cincinnati metropolitan area.
                                         </span>" </p>
                                 <div class="byline d-flex flex-row justify-content-between">
-                                    <p class="author">Jamie Baker-Prewitt</p>
+                                    <p class="author" style="font-size: 15px;">Jamie Baker-Prewitt - Chief Research Officer</p>
                                     <img src="Grayscale Logos/Burke inc.png" alt="Burke" style="max-width: 50%;">
+                                    <!-- <img alt="P&G" data-src="Grayscale/Burke inc.png" class="logo lazyload"><noscript><img class="logo" src="Grayscale Logos/Burke inc.png" alt="P&G"></noscript> -->
 
                                 </div>
                             </div>
@@ -891,13 +942,13 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                     <div class="card testimonial-card ">
                         <div class="d-flex flex-column flex-md-row ">
                             <div class="image ">
-                                <div class="thumbnail " style="background-image:url( 'https://redicincinnati.com/wp-content/uploads/2020/07/David-Adams-Close-up.jpg'); "></div>
+                                <div class="thumbnail " style="background-image:url('https://media-exp1.licdn.com/dms/image/C5603AQHfToS8TYd02g/profile-displayphoto-shrink_800_800/0/1639662282659?e=1655942400&v=beta&t=0XN7bNWPWlmCsBTbaw-6hWEv83P4ESRDxvyxg6iOF00'); "></div>
                             </div>
                             <div class="quote-content ">
                                 <p> <span class="highlight ">"Gamification is the new way of marketing.</span> It also helps put things into a fresh perspective, when you consider everything a game, all you need to do when you fail is play again."
                                 </p>
                                 <div class="byline d-flex flex-row justify-content-between ">
-                                    <p class="author ">Bob Gilbreath</p>
+                                    <p class="author" style="font-size: 15px;">Bob Gilbreath - Co-founder and CEO</p>
 
                                 </div>
                                 <img src="Grayscale Logos/hearty.png" alt="hearty" style="max-width: 40%; float: right;">
@@ -908,13 +959,13 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                     <div class="card testimonial-card ">
                         <div class="d-flex flex-column flex-md-row ">
                             <div class="image ">
-                                <div class="thumbnail " style="background-image:url( 'https://redicincinnati.com/wp-content/uploads/2020/08/Jesse-Grissom.jpeg'); "></div>
+                                <div class="thumbnail " style="background-image:url( 'https://media-exp1.licdn.com/dms/image/C4E03AQFXrTXKlb9OFg/profile-displayphoto-shrink_800_800/0/1638290230517?e=1655942400&v=beta&t=LBl_1ma8SI8l1GlTCRf97upKu0c_I7SI8B99YDlm5NE'); "></div>
                             </div>
                             <div class="quote-content ">
                                 <p>“We're gonna need a super long quote here for the page to span properly so <span class="highlight ">Glenn please give us your most heartfelt quote about Cincinnati and Gamification.</span> We thank you and promise to put
-                                    your prettiest picture here.” - From your dearest Cincinnati Digital Innvation students. My god how long does this need to be for it to span properly. Oh around this long.</p>
+                                    your prettiest picture here.” - From your dearest Cincinnati Digital Innvation students. My god how long does this need to be for it to span properly. Oh around this long."</p>
                                 <div class="byline d-flex flex-row justify-content-between ">
-                                    <p class="author ">Glenn Platt</p>
+                                    <p class="author" style="font-size: 15px;">Glenn Platt - Ph.D.</p>
                                     <img src="Grayscale Logos/Miami University.png" alt="Miami University" style="max-width: 50%;">
 
 
@@ -945,18 +996,19 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
 
             <div class="container ">
                 <div class="header d-block d-md-flex justify-content-between ">
-                    <h2 class="text-uppercase ">Notable Gamification Businesses</h2>
+                    <h2 class="text-uppercase ">Gamification Case Studies</h2>
 
                 </div>
                 <div class="card-link-container d-flex flex-wrap " app-call="app.common.expandContent ">
-                    <a href="https://superhuman.com/ " target="_blank " class="card-link blog-post ">
+                    <a href="https://www.behearty.co/ " target="_blank " class="card-link blog-post ">
                         <div class="card-item ">
-                            <div class="card-image " style="background-image:url( 'https://superhuman.com/71222bdc169e5906c28247ed5b7cf0ed.share-icon.png'); ">
+                            <div class="card-image " style="background-image:url('https://app.behearty.co/static/media/captain-emoji.45dcddb5.png'); ">
                             </div>
                             <div class="card-content ">
-                                <h3>Superhuman for Business</h3>
+                                <h3>Hearty</h3>
                                 <div class="collapse " id="collapse1 ">
-                                    <p>With Superhuman for Business, you and your team will get through email twice as fast as before. You'll regain focus, increase your productivity, and save hours every week.
+                                    <p>A professional community built by recommendations of people we know and trust. Members make recommendations of one another to leaderboards for their role, skills, or interests. Top Members gain access to exclusive networks
+                                        and personalized career opportunities.
                                     </p>
                                 </div>
 
@@ -1078,7 +1130,7 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
                     <img alt=" " data-src="https://redicincinnati.com/wp-content/uploads/2022/02/university-of-cincinnati.png " class="lazyload " src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src=" https://redicincinnati.com/wp-content/uploads/2022/02/university-of-cincinnati.png
                                         " alt=" "></noscript>
                 </div>
-                <button onclick="toggleIcon(3) "> <i id="test " class="icon bi bi-award "></i></button>
+                <button onclick="toggleIcon(3)"> <i id="test " class="icon bi bi-award find-icon "></i></button>
 
             </div>
         </div>
@@ -1543,26 +1595,27 @@ height="0" width="0" style="display:none;visibility:hidden" data-src="https://ww
         </div>
     </div>
 
-    <div id="myModal " class="modal " tabindex="-1 " role="dialog ">
+    <div id="myModal" class="modal" tabindex="-1 " role="dialog ">
         <div class="modal-dialog " role="document ">
             <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title ">Modal title</h5>
-                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                <div class="modal-header">
+                    <button type="button " class="close " data-dismiss="modal" aria-label="Close" onclick="closeModal()">
             <span aria-hidden="true ">&times;</span>
           </button>
                 </div>
                 <div class="modal-body ">
-                    <p>You found all the icons!!!</p>
+                    <p style="text-align: left;">You found all the icons!!! Enter your email for the secret prize</p>
+                    <textarea name="message" id="message"></textarea><br>
+
                 </div>
-                <div class="modal-footer ">
-                    <button id='closeModal' type="button " onclick="closeModal() " class="btn btn-danger " data-bs-dismiss="modal ">Close</button>
-                </div>
+                <!-- <div class="modal-footer ">
+                    <button id='closeModal' type="button " onclick="closeModal()" class="btn btn-danger " data-bs-dismiss="modal ">Close</button>
+                </div> -->
             </div>
         </div>
     </div>
 
-    <script type="text/javascript " src="gameFunction.js?ver=1.0.2 "></script>
+    <script type="text/javascript " src="gameFunction.js?ver=1.0.3 "></script>
 
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=3.3.1' id='AltQuery-js'></script>
     <script type='text/javascript' src='https://redicincinnati.com/assets/js/vendor-static-dc19903731be50946017.min.js?ver=1.0.0' id='vendor-static-js'></script>
