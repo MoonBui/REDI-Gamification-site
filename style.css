@@ -69,6 +69,81 @@ button {
 }
 
 
+/* <html>
+<head>
+	<style> */
+
+.gameIcons img {
+    flex-wrap: inline-flex;
+    max-width: 20%;
+    margin: 1rem;
+}
+
+.gameIcons img:hover,
+.targetIcon:hover {
+    filter: invert(12%) sepia(54%) saturate(5547%) hue-rotate(348deg) brightness(116%) contrast(99%);
+}
+
+.targetIcon:not(ul li .targetIcon) {
+    max-width: 5%;
+}
+
+.targetIcon {
+    visibility: visible;
+}
+
+.logoWall ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.logoWall ul li {
+    margin: auto;
+    max-width: 60%;
+    padding-left: 1rem;
+    text-align: center;
+    width: 20%;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all .5s ease-in-out;
+}
+
+.logoWall ul li:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .logoWall ul li {
+        width: 33%;
+    }
+}
+
+
+/* </style>
+</head>
+<body>
+<div class="logoWall">
+	<ul>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+		<li>Logo</li>
+	</ul>
+</div>
+</body> */
+
+
 /* h1,
 #result {
     display: inline-flex;

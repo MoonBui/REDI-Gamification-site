@@ -1,15 +1,17 @@
 var results = 0
-const MAX_NUM = 4
+const MAX_NUM = 6
 
 document.getElementById("myModal").style.display = "none";
 
 function toggleIcon(n) {
-    var icon = document.getElementsByClassName("find-icon");
-    icon[n].style.opacity = '0'
+    var icon = document.getElementsByClassName("targetIcon");
+    icon[n].setAttribute("style", "opacity: 0");
     window.setTimeout(
         function removethis() {
-            icon[n].style.display = "none";
+            // icon[n].style.display = "none";
+            icon[n].style.visibility = "hidden";
         }, 300);
+
     results += 1;
 
     if (MAX_NUM / 2 == results) {
