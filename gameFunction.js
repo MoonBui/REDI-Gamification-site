@@ -10,7 +10,7 @@ function toggleIcon(n) {
         function removethis() {
             // icon[n].style.display = "none";
             icon[n].style.visibility = "hidden";
-        }, 300);
+        }, 500);
 
     results += 1;
 
@@ -27,3 +27,14 @@ function closeModal() {
     var close = document.getElementById("myModal");
     close.style.display = "none"
 }
+
+// var objDiv = document.getElementById("chat-popup");
+// objDiv.scrollTop = objDiv.scrollHeight;
+
+// function openForm() {
+//     document.getElementById("myForm").style.display = "block";
+// }
+
+// function closeForm() {
+//     document.getElementById("myForm").style.display = "none";
+// }
