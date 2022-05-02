@@ -109,3 +109,10 @@ button {
 .tooltiptext:hover {
     visibility: visible;
 }
+
+#submit {
+    border-radius: 1em;
+    padding: 1rem;
+    background-color: #c4161c;
+    color: white;
+}
