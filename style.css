@@ -49,6 +49,7 @@ button {
 .targetIcon {
     visibility: visible;
     transition: all .5s ease-out;
+    max-width: 60%;
 }
 
 
@@ -82,6 +83,11 @@ button {
     .logoWall ul li {
         width: 33%;
     }
+}
+
+.less-width {
+    max-width: 50%;
+    height: auto;
 }
 
 
