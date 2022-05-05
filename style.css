@@ -90,6 +90,16 @@ button {
     height: auto;
 }
 
+.less-width2 {
+    max-width: 60%;
+    height: auto
+}
+
+.more.width {
+    min-width: 150%;
+    height: auto;
+}
+
 
 /* Add a red background color to the cancel button */
 
